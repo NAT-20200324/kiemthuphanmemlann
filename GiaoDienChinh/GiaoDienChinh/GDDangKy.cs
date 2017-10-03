@@ -71,5 +71,15 @@ namespace GiaoDienChinh
 
         }
 
+        private void btClosed_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn muốn đóng?", "Đóng", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK) {
+                if (cn != null && cn.State == ConnectionState.Open)
+                    cn.Close();
+                this.Close();
+            }
+        }
+
     }
 }

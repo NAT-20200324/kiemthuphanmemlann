@@ -188,6 +188,7 @@
             this.btClosed.TabIndex = 14;
             this.btClosed.Text = "Huỷ Bỏ";
             this.btClosed.UseVisualStyleBackColor = true;
+            this.btClosed.Click += new System.EventHandler(this.btClosed_Click);
             // 
             // GDDangKy
             // 
